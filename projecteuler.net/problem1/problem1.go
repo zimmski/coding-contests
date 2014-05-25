@@ -13,7 +13,7 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 */
 
 // Bruteforce is just a quick implementation
-// This is an O(n) solution with 2n modulos
+// This is an O(n) solution with a lot of unnecessary modulos
 func Bruteforce(n int) int {
 	sum := 0
 
