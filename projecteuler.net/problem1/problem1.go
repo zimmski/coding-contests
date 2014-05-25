@@ -31,7 +31,7 @@ func Bruteforce(n int) int {
 func Optimal(n int) int {
 	/*
 
-		We can find out how many mupltiplies by 3 and 5 are in n by simply dividing N with 3 and 5
+		We can find out how many multiples of 3 and 5 are from 1 to n by simply dividing n with 3 and 5
 
 			count_3 = n / 3
 			count_5 = n / 5
@@ -59,11 +59,12 @@ func Optimal(n int) int {
 
 			|A ∪ B| = |A| + |B| - |A ∩ B|
 
-		Applied to our problem we can find the sum of all multiples of 3 or 5 below n with
+		Applied to our problem we can find the sum of all multiples of 3 or 5 from 1 to n with
 
 			sum_3_or_5(n) = multiples_sum(n, 3) + multiples_sum(n, 5) - multiples_sum(n, 15)
 
 		But we have to use 1000 - 1 as n since it is below 1000.
+
 	*/
 
 	short_sum := func(n, k int) int {
