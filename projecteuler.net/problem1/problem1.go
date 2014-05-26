@@ -13,8 +13,13 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 */
 
 // Bruteforce is just a quick implementation
-// This is an O(n) solution with a lot of unnecessary modulos
 func Bruteforce(n int) int {
+	/*
+
+		This is an O(n) solution with a lot of unnecessary modulos
+
+	*/
+
 	sum := 0
 
 	for i := 1; i < n; i++ {
@@ -27,9 +32,10 @@ func Bruteforce(n int) int {
 }
 
 // Optimal is the best solutions I made so fare
-// This is an O(1) solution
 func Optimal(n int) int {
 	/*
+
+		This is an O(1) solution
 
 		We can find out how many multiples of 3 and 5 are from 1 to n by simply dividing n with 3 and 5
 
