@@ -45,7 +45,7 @@ func FasterBruteforce(n int) int {
 	/*
 
 		Since every third term of the Fibonacci sequence is even
-		we can reduce the steps (TODO by how much?) and since we
+		we can reduce the steps to one third and since we
 		can guarantee that every third term is even (TODO show proof
 		adding two even make even two odd make even one even one odd make odd)
 		we can omit the validation for even.
