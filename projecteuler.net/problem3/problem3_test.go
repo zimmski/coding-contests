@@ -11,6 +11,7 @@ func assertProblem(t *testing.T, f func(n int) int) {
 	Equal(t, 3, f(12))
 	Equal(t, 5, f(1200))
 	Equal(t, 29, f(13195))
+	Equal(t, 13, f(455))
 	Equal(t, 6857, f(600851475143))
 }
 
